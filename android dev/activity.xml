@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#F5F5F5"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter no."
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:layout_marginEnd="16dp" />
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:hint=""
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:background="@android:drawable/edit_text"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check the no. is Prime or not"
+        android:textSize="14sp"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#6200EE"
+        android:textColor="#FFFFFF" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:drawable/dialog_holo_light_frame">
+        <TextView
+            android:id="@+id/textViewOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp"
+            android:text=""
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>
